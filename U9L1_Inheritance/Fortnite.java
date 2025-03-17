@@ -1,10 +1,11 @@
-public class Fortnite {
+public class Fortnite extends VideoGames {
     private String skin;
     private String pickaxe;
     private int vbucks;
     private String gameMode;
 
-    public Fortnite(String skin, String pickaxe, int vbucks, String gameMode) {
+    public Fortnite(String title, String type, String date, String engine, String gameMode, String skin, String pickaxe, int vbucks) {
+        super(title, type, date, engine, gameMode);
         this.skin = skin;
         this.pickaxe = pickaxe;
         this.vbucks = vbucks;
@@ -21,10 +22,6 @@ public class Fortnite {
 
     public int getVbucks() {
         return vbucks;
-    }
-
-    public String getGameMode() {
-        return gameMode;
     }
 
     public void playBuildFights() {

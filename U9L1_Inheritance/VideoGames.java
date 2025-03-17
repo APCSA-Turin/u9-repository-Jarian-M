@@ -3,12 +3,14 @@ public class VideoGames {
     private String type;
     private String date;
     private String engine;
+    private String gameMode;
 
-    public VideoGames(String title, String type, String date, String engine) {
+    public VideoGames(String title, String type, String date, String engine, String gameMode) {
         this.title = title;
         this.type = type;
         this.date = date;
         this.engine = engine;
+        this.gameMode = gameMode;
     }
 
     public String getTitle() {
@@ -25,6 +27,10 @@ public class VideoGames {
 
     public String getEngine() {
         return engine;
+    }
+
+    public String getGameMode() {
+        return gameMode;
     }
 
     public void playGame() {

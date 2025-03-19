@@ -18,6 +18,10 @@ public class Car extends Vehicle {
       return discountApplied;
     }
 
+    public void setDiscountApplied(boolean newDis) {
+        discountApplied = newDis;
+    }
+
     public void printCar() {
         String print = "License Plate: " + getLicensePlate() + "\n";
         print += "Toll Fee: " + getTollFee() + "\n";

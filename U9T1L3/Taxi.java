@@ -23,6 +23,11 @@ public class Taxi extends Car{
     }
 
     public void pickupRiders(int numRiders, double farePerRider) {
-        
+        setPassengers(getPassengers() + numRiders);
+        fareCollected += numRiders * farePerRider;
+        if(!isDiscountApplied() && getPassengers() >= 4) {
+            setTollFee(getTollFee() / 2);
+            setDiscountApplied(true);
+        }
     }
 }

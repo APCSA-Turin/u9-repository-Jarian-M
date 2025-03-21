@@ -15,6 +15,11 @@ public class Computer {
         return memory;
     }
 
+    public void printInfo() {
+        System.out.println("Screen size = " + screenSize);
+        System.out.println("Memory = " + memory);
+    }
+
     public void installOperatingSystem() {
         System.out.println("installing OS...");
     }

@@ -23,6 +23,7 @@ public class ComputerRunner {
         System.out.println(laptop1.getMemory());
         System.out.println(laptop1.isTrackPadCalibrated());
         laptop1.installOperatingSystem();
+        laptop1.printInfo();
         laptop1.calibrateTrackpad();
         System.out.println(laptop1 instanceof Laptop);
         System.out.println(laptop1 instanceof Computer);
